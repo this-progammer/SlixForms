@@ -30,4 +30,54 @@ public:
     virtual bool isShort() = 0;
 };
 
+/*Short*/
+class Short : public Element {
+public:
+    Short( short s );
+    ~Short();
+};
+
+/*Long*/
+class Long : public Element {
+public:
+    Long( long l );
+    ~Long();
+};
+
+/*Unsigned*/
+class Unsigned : public Element {
+public:
+    Unsigned( unsigned u );
+    ~Unsigned();
+};
+
+/*Double*/
+class Double : public Element {
+public:
+    Double( double d );
+    ~Double();
+};
+
+/*Float*/
+class Float : public Element {
+public:
+    Float( float f );
+    ~Float();
+};
+
+/*Char*/
+class Char : public Element {
+public:
+    Char( char c );
+    Char( const char* c );
+    ~Char();
+};
+
+/*Int*/
+class Int : public Element {
+public:
+    Int( int n );
+    ~Int();
+};
+
 #endif 
