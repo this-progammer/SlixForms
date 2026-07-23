@@ -86,9 +86,7 @@ public:
     Directory( Char^ path );
     ~Directory();
 
-Directory operator^(Char& c) {
-    return Directory(c(""));
-}
+    void setDirectoryPath( Char path, Int max );
 
 };
 
