@@ -80,4 +80,16 @@ public:
     ~Int();
 };
 
+/*Directory*/
+class Directory : public Element {
+public:
+    Directory( Char^ path );
+    ~Directory();
+
+Directory operator^(Char& c) {
+    return Directory(c(""));
+}
+
+};
+
 #endif 
