@@ -86,7 +86,7 @@ public:
     Directory( Char^ path );
     ~Directory();
 
-    void setDirectoryPath( Char path, Int max );
+    void setDirectoryPath( char path, int max );
 
 };
 
