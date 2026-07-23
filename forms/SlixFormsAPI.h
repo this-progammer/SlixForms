@@ -86,11 +86,17 @@ public:
     Directory( Char^ path );
     ~Directory();
 
-    void setDirectoryPath( char path, int max );
-    void setFilterExtension( const char* filter );
-    void setFilterName( const char* name );
-    void setFilterSize( size_t sz );
-
+    void SetDirectoryPath( char path, int max );
+    void SetFilterExtension( const char* filter );
+    void SetFilterName( const char* name );
+    void SetFilterSize( size_t sz );
+    void SetDefaultFile( const char* def_file );
+    bool Select( const char* sel );
+    void Update();
+    void SetViewType( int type );
+    void SetSelectType( int sel_type );
+    int GetViewType();
+    int GetSelectType();
 };
 
 #endif 
