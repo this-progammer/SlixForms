@@ -87,6 +87,9 @@ public:
     ~Directory();
 
     void setDirectoryPath( char path, int max );
+    void setFilterExtension( const char* filter );
+    void setFilterName( const char* name );
+    void setFilterSize( size_t sz );
 
 };
 
