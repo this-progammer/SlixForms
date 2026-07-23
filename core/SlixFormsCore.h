@@ -14,9 +14,9 @@ namespace Slix
         public:
           Core();
           ~Core();
-          
-          void Initalize();
-
+          bool Initalize(); // initalize the version
+          bool Unitalize(); // unitalize the version
+          void Update(); // update the version
       };
 }
 
