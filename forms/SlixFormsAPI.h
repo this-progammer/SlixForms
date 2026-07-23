@@ -97,6 +97,9 @@ public:
     void SetSelectType( int sel_type );
     int GetViewType();
     int GetSelectType();
+    Directory& GetDirectory();
 };
+
+
 
 #endif 
